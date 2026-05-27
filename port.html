@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anji | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    html{scroll-behavior:smooth}
+    body{background:#0f172a;color:#fff}
+    nav{position:sticky;top:0;background:rgba(15,23,42,.95);display:flex;justify-content:space-between;align-items:center;padding:18px 8%;border-bottom:1px solid #1e293b;z-index:1000}
+    nav h1{font-size:28px;color:#60a5fa}
+    nav ul{display:flex;gap:25px;list-style:none}
+    nav a{text-decoration:none;color:#fff;font-weight:500}
+    nav a:hover{color:#60a5fa}
+    section{padding:80px 8%}
+    .hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center}
+    .hero h2{font-size:58px}
+    .hero span{color:#60a5fa}
+    .hero p{margin:20px auto;color:#cbd5e1;max-width:700px;font-size:18px}
+    .btns{margin-top:30px}
+    .btn{display:inline-block;padding:14px 28px;margin:10px;border-radius:12px;text-decoration:none;font-weight:600;transition:.3s}
+    .primary{background:#2563eb;color:#fff}
+    .secondary{border:2px solid #334155;color:#fff}
+    .btn:hover{transform:translateY(-3px)}
+    h3.section-title{text-align:center;font-size:38px;margin-bottom:40px;color:#60a5fa}
+    .card{background:#1e293b;border-radius:22px;padding:25px;box-shadow:0 8px 25px rgba(0,0,0,.25)}
+    .about p{line-height:1.9;color:#cbd5e1}
+    .skills-grid,.project-grid{display:grid;gap:20px}
+    .skills-grid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+    .skill{padding:18px;text-align:center;background:#1e293b;border-radius:16px;font-weight:600;transition:.3s}
+    .skill:hover,.project:hover{transform:translateY(-6px)}
+    .project-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+    .project h4{font-size:24px;margin-bottom:12px}
+    .project p{color:#cbd5e1;margin-bottom:15px}
+    .contact-box p{margin:10px 0;color:#cbd5e1}
+    footer{text-align:center;padding:20px;border-top:1px solid #1e293b;color:#94a3b8}
+    @media(max-width:768px){
+      nav{padding:15px 5%;flex-direction:column;gap:10px}
+      nav ul{gap:14px;flex-wrap:wrap;justify-content:center}
+      .hero h2{font-size:40px}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>Anji</h1>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <img src="images.jpg" alt="Anji Profile" style="width:160px;height:160px;border-radius:50%;border:4px solid #60a5fa;object-fit:cover;margin-bottom:25px;box-shadow:0 0 30px rgba(96,165,250,.35);">
+  <div>
+    <h2>Hi, I'm <span>Anji</span></h2>
+    <h1 id="typing-text">Frontend Developer | Web Developer | HTML5 Game Developer</h1>
+    <p>
+      I build responsive websites, interactive applications, and mobile-friendly HTML5 games with modern UI design.
+    </p>
+
+    <div class="btns">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="#contact" class="btn secondary">Contact Me</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h3 class="section-title">About Me</h3>
+  <div class="card about">
+    <p>
+      I am an aspiring Software Engineer and passionate Web Developer with a strong interest in building responsive websites, interactive web applications, and mobile-friendly HTML5 games. I enjoy solving technical problems, improving user experiences, and creating smooth, responsive interfaces for modern devices.
+
+I have hands-on experience working with HTML, CSS, JavaScript, GitHub, web hosting, DNS basics, and game development. I am also expanding my technical knowledge by learning Python, Linux, Node.js, Socket.IO, and backend technologies to strengthen my software development skills.
+
+I believe in continuous learning, self-improvement, and building real-world projects to grow as a professional developer. My goal is to become a skilled Software Engineer capable of developing impactful digital products and scalable web solutions.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <h3 class="section-title">Technical Skills</h3>
+  <div class="skills-grid">
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Responsive Web Design</div>
+    <div class="skill">Mobile UI Optimization</div>
+    <div class="skill">Git & GitHub</div>
+    <div class="skill">GitHub Pages</div>
+    <div class="skill">Web Hosting</div>
+    <div class="skill">DNS & Domain Management</div>
+    <div class="skill">Browser DevTools</div>
+    <div class="skill">Debugging</div>
+    <div class="skill">UI/UX Design Basics</div>
+    <div class="skill">HTML5 Game Development</div>
+    <div class="skill">Touch Controls Optimization</div>
+    <div class="skill">Performance Optimization</div>
+    <div class="skill">SEO Basics</div>
+    <div class="skill">Python (Learning)</div>
+    <div class="skill">MySQL</div>
+    <div class="skill">Linux (Learning)</div>
+    <div class="skill">Node.js (Learning)</div>
+    <div class="skill">Socket.IO (Learning)</div>
+    <div class="skill">API Integration (Learning)</div>
+  </div>
+
+  <h3 class="section-title" style="margin-top:60px;">Professional Skills</h3>
+  <div class="skills-grid">
+    <div class="skill">Problem Solving</div>
+    <div class="skill">Fast Learner</div>
+    <div class="skill">Self Learning</div>
+    <div class="skill">Communication</div>
+    <div class="skill">Team Collaboration</div>
+    <div class="skill">Time Management</div>
+    <div class="skill">Creativity</div>
+    <div class="skill">Adaptability</div>
+    <div class="skill">Critical Thinking</div>
+    <div class="skill">Project Building</div>
+  </div>
+</section>
+
+<section id="education">
+  <h3 class="section-title">Education</h3>
+
+  <div class="project-grid">
+    <div class="card">
+      <h4>🎓 Bachelor of Technology (B.Tech)</h4>
+      <p style="color:#cbd5e1;margin-top:10px;line-height:1.8;">
+        Currently pursuing <strong>B.Tech</strong> at <strong>CMR College of Engineering & Technology</strong>, focusing on software development, web technologies, and practical project building.
+      </p>
+    </div>
+
+    <div class="card">
+      <h4>💻 Diploma in Computer Science Engineering (CSE)</h4>
+      <p style="color:#cbd5e1;margin-top:10px;line-height:1.8;">
+        Completed <strong>Diploma in Computer Science Engineering (CSE)</strong> with a <strong>CGPA of 8.25</strong>, building a strong foundation in computer science, programming, and technical fundamentals.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="certificates">
+  <h3 class="section-title">Certifications & Learning</h3>
+  <div class="skills-grid">
+    <div class="skill">AWS & DevOps Industrial Training</div>
+    <div class="skill">SV Global Services</div>
+    <div class="skill">Networking Basics</div>
+    <div class="skill">Introduction to Cybersecurity</div>
+    <div class="skill">Data Science</div>
+    <div class="skill">Python Basics</div>
+    <div class="skill">Cisco Certifications</div>
+    <div class="skill">HTML & CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">Web Development</div>
+    <div class="skill">Git & GitHub</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h3 class="section-title">My Projects</h3>
+
+  <div class="project-grid">
+    <div class="card project">
+      <h4>♟ Multiplayer Chess Game</h4>
+      <p>Real-time multiplayer chess game with room joining system and mobile responsive UI.</p>
+      <a href="#" class="btn primary">Live Demo</a>
+    </div>
+
+    <div class="card project">
+      <h4>🐍 Snake Game</h4>
+      <p>Mobile-friendly snake game with smooth touch controls and score system.</p>
+      <a href="#" class="btn primary">Live Demo</a>
+    </div>
+
+    <div class="card project">
+      <h4>⭕ Tic Tac Toe</h4>
+      <p>Touch-friendly multiplayer game with responsive UI and smooth gameplay.</p>
+      <a href="#" class="btn primary">Live Demo</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h3 class="section-title">Contact Me</h3>
+  <div class="card contact-box">
+    <p><strong>Email:</strong> thandraan@gmail.com</p>
+    <p>
+  <strong>Website:</strong>
+  <a href="https://anjicmrcet.online" target="_blank" style="color:#60a5fa;">
+    anjicmrcet.online
+  </a>
+</p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/anji9391" target="_blank" style="color:#60a5fa;">github.com/anji9391</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anjaneyulu-t/" target="_blank" style="color:#60a5fa;">linkedin.com/in/anjaneyulu-t</a></p>
+<p>
+  <strong>My portfolio:</strong>
+  <a href="https://portfolio.anjicmrcet.online" target="_blank" style="color:#60a5fa;">
+    portfolio.anjicmrcet.online
+  </a>
+</p>  
+</div>
+</section>
+
+<section id="resume">
+  <h3 class="section-title">Resume</h3>
+  <div class="card" style="text-align:center;">
+    <p style="color:#cbd5e1;margin-bottom:20px;">Download my professional resume to learn more about my projects, technical skills, and experience.</p>
+    <a href="resume.pdf" download class="btn primary">Download Resume</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Anji | All Rights Reserved
+</footer>
+
+<script>
+const roles = [
+  'Frontend Developer',
+  'Web Developer',
+  'HTML5 Game Developer',
+  'Aspiring Software Engineer'
+];
+let i = 0;
+setInterval(() => {
+  document.getElementById('typing-text').textContent = roles[i];
+  i = (i + 1) % roles.length;
+}, 2200);
+</script>
+</body>
+</html>
